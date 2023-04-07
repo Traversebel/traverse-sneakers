@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<title>Traverse</title>
+	<style>
+
+
+		body 
+{
+        background-color: #000;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+      /* Дополнительные стили */
+      h1 {
+        color: #fff;
+        text-align: center;
+        margin-top: 50px;
+      }
+ { 
+			
+			background-size: cover;
+			color: white;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		h1 {
+			font-size: 45px;
+			margin: 0;
+		}
+ 	nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  height: 100%;
+  margin-left: -60px;
+}
+
+
+nav li { 
+	margin-left: 50px;
+}
+
+nav li a { 
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+section {
+	padding: 50px;
+	height: calc(100vh - 170px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+h2 {
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+li {
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	text-align: center;
+}
+li img {
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+p {
+	font-size: 16px;
+	margin: 0;
+	margin-bottom: 20px;
+}
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+
+button:hover {
+  
+  background-color: transparent;
+  color: white;
+}
+
+.contacts-list {
+	background-color: transparent;
+	padding: 20px;
+	font-size: 20px;
+	display: none;
+	border: none;
+color: white;
+}
+
+
+.contacts-list li {
+	margin-bottom: 8px;
+}
+.contacts-button:last-child {
+  margin-left: -30px;
+}
+
+
+.about-list {
+	background-color: transparent;
+	padding: 20px;
+	font-size: 20px;
+	color: white;
+	display: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.about-list li {
+	margin-bottom: 10px;
+}
+
+.gallery-item {
+	position: relative;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+}
+
+.gallery-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: all 0.3s ease-in-out;
+}
+
+
+
+</style>
+</head>
+<body> 
+    <video autoplay loop muted playsinline style="position: fixed; z-index: -1; width: 100%; height: 100%; object-fit: cover;">
+      <source src="C:\Users\username\OneDrive\Рабочий стол\сайт\fon3.mp4">
+    </video>
+<header> 
+  
+  <nav> 
+
+
+
+  <ul style="text-align: center;"> 
+  <li>
+  <button onclick="window.location.href='https://www.instagram.com/traverse.bel/'">
+    <span>Instagram</span>
+    <i class="fab fa-instagram"></i>
+  </button>
+</li>
+<li>
+<button class="nav-button about-button">
+    <span>О нас</span>
+    <i class="fas fa-feather-alt"></i>
+  </button>
+</li>
+
+<style>
+  li {
+    padding-left: 20px;
+  }
+</style>
+
+    <li><button class="nav-button contacts-button">
+<span>Контакты</span>
+<i class="far fa-envelope"></i>
+</li>
+  </ul>
+  <ul id="aboutList" class="about-list" style="display: none;">
+    <div style="color: white; border: none;font-size: 27px;padding-left: 150px;padding-top: 20px;font-family: Casanova;right: -300px;background-color: rgba(0, 0, 0, 0.7);">Привет! Если вы ищете новую модель кроссовок, то мы готовы помочь вам с выбором и оформлением заказа.<br> Для удобства наших клиентов мы предлагаем общаться с нами через нашу страницу в Instagram (traverse.bel).</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;font-family: Casanova;background-color: rgba(0, 0, 0, 0.7);">Напишите нам, и мы с радостью ответим на все ваши вопросы, поможем подобрать подходящую модель и<br> оформим заказ с доставкой к вам домой.</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;font-family: Casanova;background-color: rgba(0, 0, 0, 0.7);">На нашей странице в Instagram вы также можете ознакомиться с новинками и актуальными предложениями.<br> Мы постоянно обновляем ассортимент и предлагаем только качественную и стильную обувь.</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;font-family: Casanova;background-color: rgba(0, 0, 0, 0.7);">Так что не стесняйтесь, напишите нам в Instagram, и мы сделаем все возможное, чтобы вы были довольны<br> своей покупкой. Спасибо за внимание, ждем ваших сообщений!</div>
+
+
+  </ul>
+  <ul id="contactsList" class="contacts-list">
+    <li>Email: traverse.bel@gmail.com</li>
+  </ul>
+  <script>
+    const aboutButton = document.querySelector(".about-button");
+    const aboutList = document.querySelector("#aboutList");
+
+    aboutButton.addEventListener("click", function() {
+      if (aboutList.style.display === "none") {
+        aboutList.style.display = "block";
+      } else {
+        aboutList.style.display = "none";
+      }
+    });
+
+    const contactsButton = document.querySelector(".contacts-button:last-child");
+
+    const contactsList = document.querySelector("#contactsList");
+
+
+    contactsButton.addEventListener("click", function() {
+      if (contactsList.style.display === "none") {
+        contactsList.style.display = "block";
+      } else {
+        contactsList.style.display = "none";
+      }
+    });
+  </script>
+</nav>
+
+</header>
+	<section>
+		<ul>
+			<li>
+				<img src="https://crossovki.by/wp-content/uploads/2022/07/krossovki-new-balance-327-1-13.jpg">
+				
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+
+<style>
+p {
+ 
+  border: 3px solid white;
+}
+
+</style>
+			</li>
+			<li>
+				<img src="https://brandland.by/image/cache/catalog/NewBalance/237/buty-new-balance-ms-ws237v1-ms237rb-6299dabdf0c4a-1000x1000.jpg">
+
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+
+				
+			</li>
+
+			<li>
+				<img src="https://nb.scene7.com/is/image/NB/mr993gl_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+
+				
+			</li>
+
+			<li>
+				<img src="https://nb.scene7.com/is/image/NB/m990gg3_nb_02_i?$pdpflexf2$&qlt=80&fmt=webp&wid=440&hei=440">
+
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+
+				
+			</li>
+			<li>
+				<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b0b6d4a107ad4e84b3baaf8700866f07_9366/Campus_00s_Shoes_Green_H03472_01_standard.jpg">
+				
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+				
+			</li>
+			<li>
+				<img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/b954a4295e564974baa5af34000db9a3_9366/Rivalry_Low_86_Shoes_Beige_FZ6323_01_standard.jpg">
+				
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+				
+			</li>
+			<li>
+				<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/374915/04/sv01/fnd/PNA/fmt/png/Suede-Classic-XXI-Men's-Sneakers">
+				
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+				
+			</li>
+			<li>
+				<img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1350,h_1350/global/374915/75/sv01/fnd/PNA/fmt/png/Suede-Classic-XXI-Men's-Sneakers">
+				
+				<p style="font-size: 30px;"><button onclick="window.location.href='https://instagram.com/traverse.bel?igshid=YmMyMTA2M2Y='">Купить</button></p>
+				
+			</li>
+		</ul>
+	</section>
+
+	<script>
+ const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+  const contactsList = document.querySelector(".contacts-list");
+
+  // Toggle Nav Menu
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  // Show Contacts List
+  const contactsButton = document.querySelector(".contacts-button");
+  contactsButton.addEventListener("click", () => {
+    contactsList.classList.toggle("active");
+  });
+
+  // Gallery Lightbox
+  const galleryItems = document.querySelectorAll(".gallery-item");
+  galleryItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.classList.toggle("active");
+    });
+  });
+</script>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;padding-top: 70px;margin-bottom: 20px;font-family: Casanova;right: -300px">Мы предлагаем широкий ассортимент кроссовок от лучших производителей по доступным ценам. При покуп-<br>ке у нас вы получаете множество преимуществ:</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;margin-bottom: 20px;font-family: Casanova;">1.Качество товара. Мы работаем только с проверенными поставщиками, чтобы гарантировать высокое качест-<br>во нашей продукции.</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;margin-bottom: 20px;font-family: Casanova;">2.Удобство покупки. Вы можете сделать заказ у нас в любое удобное время, не выходя из дома. Наш интернет-<br>магазин работает круглосуточно.</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;margin-bottom: 20px;font-family: Casanova;">3.Доставка. Мы доставляем заказы по всей стране и за ее пределы. Для наших клиентов мы предлагаем быс-<br>трую и надежную доставку.</div>
+<div style="color: white; border: none;font-size: 27px;padding-left: 150px;margin-bottom: 60px;font-family: Casanova;">4.Индивидуальный подход. Мы понимаем, что каждый клиент уникален и может иметь свои потребности и по-<br>желания. Поэтому мы предлагаем индивидуальный подход к каждому клиенту, помогаем подобрать подходя-<br>щую модель и размер кроссовок, а также отвечаем на любые вопросы.</div>
+</body>
+</html>
